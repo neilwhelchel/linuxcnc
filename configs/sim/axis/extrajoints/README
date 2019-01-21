@@ -1,0 +1,15 @@
+extrajoints demos
+
+1extrajoint
+   One etrajoint (joint.4)
+   immediate homing
+   (jog joint4 before homing to)
+   (create a motor offset      )
+
+2extrajoints
+   Two extrajoints (joint.4, joint.5)
+   simulated home switches
+
+12extrajoints
+   Twelve extrajoints (joint.4 thru joint.15)
+   simulated home switches
