@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import getopt
 import os
 import string
@@ -15,5 +15,6 @@ def quote(n):
     return "'%s'" % n.replace("'", "'\\''")
 
 for fn in args:
-    if join: fn = os.path.join(join, fn)
-    print(quote(os.path.normpath(fn))).encode('ascii')
+    if join:
+        fn = os.path.join(join, fn)
+    sys.stdout.buffer.write(quote(os.path.normpath(fn)).encode('ascii') + b"\n")
